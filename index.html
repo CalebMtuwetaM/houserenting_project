@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+  <div class="boundary">
+  <div class="txt">
+    <h1> Make you search by filtering</h1>
+  </div>
+  <div class="category">
+    <label for="category">CATEGORY</label>
+  <select id="category" name="category">
+    <option value="option1">Villa</option>
+    <option value="option2">Mansion</option>
+    <option value="option3">Apartment</option>
+    <option value="option1">Villa</option>
+    <option value="option2">Mansion</option>
+    <option value="option3">Apartment</option>
+  </select>
+  </div>
+  <div class="location">
+    <label for="location">LOCATION</label>
+    <input type="text" id="location" name="textInput">
+  </div>
+  <div class="minprice">
+    <label for="minprice">MIN-PRICE</label>
+    <input type="text" id="minprice" name="textInput" oninput="formatCurrency(this)">
+</div>
+  <div class="maxprice">
+    <label for="maxprice">MAX-PRICE</label>
+    <input type="text" id="maxprice" name="textInput" oninput="formatCurrency(this)">
+  </div>
+  <div class="search">
+    <button id="submitButton">Submit</button>
+  </div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a  target="_blank" href="https://wa.me/<+254717012399.>" class="nav-link px-2 text-muted">Whatsapp</a></li>
+        <li class="nav-item"><a  target="_blank" href="https://www.facebook.com/101760401993758/posts/pfbid0St1TC9mcjnwPfpsZGvDwsrvJAkWgBE4FHBr6JLyxW5SduQjYjons2VyfiYdaomchl/?mibextid=Nif5oz" class="nav-link px-2 text-muted">Facebook</a></li>
+        
+        <li class="nav-item"><a target="_blank" href="https://twitter.com/GratiaPremium/status/1486352477653929985?t=BIihQlnp7VlmG9IPPl6B1w&s=08" class="nav-link px-2 text-muted">Twitter</a></li>
+        <li class="nav-item"><a  target="_blank" href="https://www.instagram.com/gratia_premium/" class="nav-link px-2 text-muted">Instagram</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Gratia, Inc</p>
+    </footer>
+  </div>
+  </div>
+</body>
+</html>

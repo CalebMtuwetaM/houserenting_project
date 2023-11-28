@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background and Overlay Divs</title>
+  <style>
+    .background-div {
+      background-color: lightblue; /* Background color for the first div */
+      width: 100%; /* Set the width to 100% to cover the entire viewport */
+      height: 100vh; /* Set the height to 100% of the viewport height */
+      position: fixed; /* Fixed position to cover the entire viewport */
+      z-index: 1; /* Set a lower z-index for the background */
+    }
+
+    .overlay-div {
+      background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red for the second div */
+      width: 150px;
+      height: 150px;
+      position: absolute; /* Absolute position to position it within the first div */
+      top: 50px;
+      left: 50px;
+      z-index: 2; /* Set a higher z-index for the overlay */
+    }
+  </style>
+</head>
+<body>
+  <div class="background-div"></div>
+
+  <div class="overlay-div">
+    <!-- Overlay div content goes here -->
+    <p>This is the overlay div.</p>
+  </div>
+</body>
+</html>
